@@ -21,8 +21,10 @@ public class UserArrayTest {
 			if(users[i] == null) {
 				continue;
 			}
+			System.out.println(users[i].getUsername());
 			users[i].showInfo();
 		}
+		
 		
 		System.out.println("=========================");
 		
