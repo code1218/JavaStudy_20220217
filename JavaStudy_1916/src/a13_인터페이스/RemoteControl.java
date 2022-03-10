@@ -29,6 +29,12 @@ public class RemoteControl implements PowerButton, VolumeUpButton, VolumeDownBut
 	}
 
 	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
+	@Override
 	public void sendSignal() {
 		// TODO Auto-generated method stub
 		System.out.println("전원 신호 " + powerFlag + "를 전송합니다.");
