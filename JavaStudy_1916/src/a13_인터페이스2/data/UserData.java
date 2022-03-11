@@ -3,7 +3,7 @@ package a13_인터페이스2.data;
 import a13_인터페이스2.model.User;
 
 public class UserData {
-	private User[] users;
+	private User[] users; 
 	
 	public UserData() {}
 	
@@ -22,7 +22,10 @@ public class UserData {
 
 	public void showUsers() {
 		for(int i = 0; i < users.length; i++) {
-			users[i].showUser();
+			if(users[i] == null) {
+				continue;
+			}
+			System.out.println(users[i]);
 		}
 	}
 }
